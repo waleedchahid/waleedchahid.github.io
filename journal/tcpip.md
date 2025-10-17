@@ -2,7 +2,7 @@
 
 ## Application
 
-Protocals in this payer inclue:
+Protocols in this payer inclue:
 - www
     - https
 - IRC
@@ -19,7 +19,7 @@ to the next layer.
 
 ## Transport
 
-Protocals in this layer include:
+Protocols in this layer include:
 
 - TCP
 - UDP
@@ -29,7 +29,7 @@ it.
 
 ## Internet
 
-Protocals in this layer include:
+Protocols in this layer include:
 
 - Routing
 - IP
@@ -39,7 +39,7 @@ destination.
 
 ## Link (or Network Access)
 
-Protocals in this layer include:
+Protocols in this layer include:
 
 - Wifi
 - Ethernet
