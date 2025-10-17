@@ -27,7 +27,7 @@ Protocals in this layer include:
 The transport layer takes the binary from the application layer, and launches
 it.
 
-## Internat
+## Internet
 
 Protocals in this layer include:
 
