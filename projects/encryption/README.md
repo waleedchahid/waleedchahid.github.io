@@ -20,20 +20,8 @@ and the messages that you received.
 | ---------------     | ---------------     | --- |
 |rs, ryg kbo iye      |hi, how are you      | 10  |
 |tx rzzo, szh lcp jzf |im good, how are you | 11  |
-|Jsfm uccr, W rwr 
-tfwgpss Gibrom. 
-Kvoh rwr mci rc?      |Very good, I did 
-frisbee Sunday. What did you do?            | 14  |
-|qexqp kfzb. F jxfkiv
-grpq afa eljbtloh 
-qefp tbbhbka, xka 
-F afa pljb JJX. 
-F jdeq yb obdfpqbofkd
-clo jv cfopq cfdeq 
-pllk!                 |thats nice. I mainly
-just did homework this weekend, 
-and I did some MMA. I might be registering 
-for my first fight soon!                   | 23  |
+|Jsfm uccr, W rwr tfwgpss Gibrom. Kvoh rwr mci rc?|Very good, I did frisbee Sunday. What did you do?| 14  |
+|qexqp kfzb. F jxfkiv grpq afa eljbtloh qefp tbbhbka, xka F afa pljb JJX. F jdeq yb obdfpqbofkd clo jv cfopq cfdeq pllk!|thats nice. I mainly just did homework this weekend, and I did some MMA. I might be registering for my first fight soon!| 23  |
 
 
 ## Part 3: Connection to TCP/IP Model
