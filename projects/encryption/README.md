@@ -36,36 +36,36 @@ Go back to the first encrypted message that you sent (it should be in `rsa_encry
 
 This message is represented as a string of letters, numbers, and symbols. But we know that the real message is in binary.
 
-Select the first six characters from this message and copy them here:
+Select the first six characters from this message and copy them here: UpEPYQ
 
 Using the ASCII table, convert these five characters to binary (if necessary,
-include leading zeroes so that each character is 8 bits): 
+include leading zeroes so that each character is 8 bits): 01010101 01110000 01000101 01010000 01011001 01010001
 
 ### Transport Layer: Break your message into packets
 
 Assume that each packet can hold two bytes. Fill in the packet information below with the binary values you computed above.
 
     =========
-    Packet 1:
+    Packet 1: 
 
-    Source: [Your Name]
-    Destination: [Partner's Name]  
+    Source: Waleed
+    Destination: Pierre  
     Sequence: 1/3
-    Data: [binary for char 1] [binary for char 2]
+    Data: [01010101] [01110000]
     =========
-    Packet 2:
+    Packet 2:  
 
-    Source: [Your Name]
-    Destination: [Partner's Name]
+    Source: Waleed
+    Destination: Pierre
     Sequence: 2/3 
-    Data: [binary for char 3] [binary for char 4]
+    Data: [01000101] [01010000]
     =========
-    Packet 3:
+    Packet 3: 
 
-    Source: [Your Name]
-    Destination: [Partner's Name]
+    Source: Waleed
+    Destination: Pierre
     Sequence: 3/3
-    Data: [binary for char 5] [binary for char 6]
+    Data: [01011001] [01010001]
     =========
 
 ## Part 4: Reflection Questions
