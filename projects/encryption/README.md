@@ -71,15 +71,20 @@ Assume that each packet can hold two bytes. Fill in the packet information below
 ## Part 4: Reflection Questions
 
 - What is the difference between symmetric and asymmetric encryption? What purpose did each serve in this simulation?
-Symmetric encryption uses the same key to both encrypt and decrypt data, while asymmetric encryption uses two different keys(a public key to encrypt and a private key to decrypt)and in the simulation, symmetric encryption keeps the message secret between sender and receiver, while asymmetric encryption is used to safely exchange the symmetric key.
+    Symmetric encryption uses the same key to both encrypt and decrypt data, while asymmetric encryption uses two different keys(a public key to encrypt and a private key to decrypt)and in the simulation, symmetric encryption keeps the message secret between sender and receiver, while asymmetric encryption is used to safely exchange the symmetric key.
+
 - Why is it important that this protocol uses a new key for each message?
-Using a new key for each message is important because it prevents attackers from decrypting old messages if they ever learn a key.
+    Using a new key for each message is important because it prevents attackers from decrypting old messages if they ever learn a key.
+
 - Why is it important that you never share your secret key?
-You must never share your secret key because, if someone else gets it, they could read or change your private messages.
+    You must never share your secret key because, if someone else gets it, they could read or change your private messages.
+
 - In the transport layer, do these messages use TCP or UDP? Why?
-The transport layer usually uses TCP for these messages because it guarantees that data gets delivered in order and without errors.
+    The transport layer usually uses TCP for these messages because it guarantees that data gets delivered in order and without errors.
+
 - Now that you've created packets in the transport layer, give a short explanation of what happens to these packets in the internet layer and in the link layer.
-In the internet layer, packets get assigned IP addresses and routed towards their destination, while in the link layer, those packets are turned into frames and sent over the physical network connection.
+    In the internet layer, packets get assigned IP addresses and routed towards their destination, while in the link layer, those packets are turned into frames and sent over the physical network connection.
+
 - This protocol successfully encrypts the **content** of the message. Even though and adversary in the middle can't read the content of the message, what other
 information can they still see?
-An adversary can still see the sender's and receiver's addresses, the time messages are sent, and the size of the data, even if the content is hidden by encryption.
+    An adversary can still see the sender's and receiver's addresses, the time messages are sent, and the size of the data, even if the content is hidden by encryption.
