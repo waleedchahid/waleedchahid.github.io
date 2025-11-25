@@ -7,10 +7,13 @@ table, th, tr, td{
 
 body{
     background-color: #e7eaf6;
+    font-family:'Helvetica' , 'Tahoma' , sans-serif;
 }
 
 h1{
     background-color: #a2a8d3;
+    margin: 0px;
+    padding: 20px;;
 }
 
 
