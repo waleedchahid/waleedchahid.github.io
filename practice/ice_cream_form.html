@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Who Wants Icecream</title>
+        <script src="../js/validate.js"></script>
+    </head>
+    <body>
+        <h1>You're Invited to an Ice Cream Party!</h1>
+        <p>Please fill out this form to help us plan.<p>
+
+        <form action="https://httpbin.org/post" method="post">
+            What is your email address?
+            <input type="text" name="email">
+<br>
+            What is your phone number?
+            <input type"text" name="phonenumber">
+<br>
+            How many people will you bring with you to the party?
+            <input type="text" name="numberofpeople">
+<br>
+            What is your favorite flavor of ice cream?
+            <!-- add button select with options vanilla, choco chip,
+            strawberry, other-->
+<br>
+            Which toppings do you like?
+            <!-- add multi select with options sprinkles, magic shell, choco
+            chips, gummy bears, other-->
+<br>
+            What kind of entertainment should we have at the party?
+            <select name="entertainment">
+                   <option value="0">Choose</option>
+                   <option value="1">Balloon Animals</option>
+                   <option value="2">Bounce House</option>
+                   <option value="3">Clown</option>
+                   <option value="4">Cornhole</option>
+                   <option value="5">DJ</option>
+                   <option value="6">Face Painting</option>
+                   <option value="7">Magician</option>
+            </select>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
+
+
