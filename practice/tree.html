@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <script src="../js/validate.js"></script>
+	<title>BEHOLD THE TREE</title>
+    <style>
+    body{
+        background-image: linear-gradient(to bottom, skyblue, snow);
+    }
+    #container{
+        position: relative;
+        width: 600px;
+        height: 80vh;
+        margin: auto;
+    }
+    #tree{
+        width: 0px;
+        height: 0px;
+        border-bottom: 70vh solid green;
+        border-left: 300px solid transparent;
+        border-right: 300px solid transparent;
+    }
+    #box{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-color: red;
+        top: 400px;
+        left: 300px;
+    }
+    #circle{
+        position: absolute;
+        top: 175px;
+        left: 350px;
+        width: 30px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background: 
+        radial-gradient(circle at 40% 30%,#0000 4%,57%,#000 90%) 
+        #FE4365;
+    }
+    #star{
+position: absolute;
+left: 265px;
+top: 0px;
+      width: 70px;  
+  aspect-ratio: 1;
+  background: #F8CA00;
+  clip-path: polygon(50% 0,
+    calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+    calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+    calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+    calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+   ); 
+    }
+    #triangle {
+position: absolute;
+top: 200px;
+left: 275px;
+  height: 30px;
+  aspect-ratio: 2;
+  --_g:calc(var(--r)/tan(22.5deg)) top var(--r),#000 98%,#0000 101%;
+  -webkit-mask:
+    conic-gradient(from 157.5deg at 50% calc(var(--r)/(3*sqrt(2) - 4) - 100%/tan(22.5deg)),#000 45deg,#0000 0)
+     0 0/100% calc(100% - var(--r)/sqrt(2)) no-repeat,
+    radial-gradient(var(--r) at 50% calc(100% - var(--r)*sqrt(2)),#000 98%,#0000 101%),
+    radial-gradient(var(--r) at left  var(--_g)),
+    radial-gradient(var(--r) at right var(--_g));
+  clip-path: polygon(50% 100%,100% 0,0 0);
+  background: linear-gradient(45deg,#FA6900,#C02942);
+    }
+    #last {
+position: absolute;
+top: 400px;
+left: 175px;
+height: 50px;
+  width: 50px;
+  background: #EDC951;
+  mask: radial-gradient(#0000 71%, #000 72%) 10000% 10000%/99.5% 99.5%;
+    }
+    </style>
+</head>
+<body>
+	<h1>Behold this MAGNIFICANT tree<h1>
+    <div id="container">
+        <div id="tree">
+            <div id="circle">
+
+            </div>
+            <div id="triangle">
+
+            </div>
+            <div id="star">
+
+            </div>
+            <div id="last">
+
+            </div>
+            <div id="box">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
