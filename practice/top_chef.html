@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>LiechtenFlights</title>
+        <style>
+        .grid {
+        display: grid;
+        height: 100vh;
+        grid:
+            'head  head  head' 100px
+            'hero  hero  waiver' 1fr
+            'hero  hero  signup' 1fr
+            'foot  foot  foot' 200px
+            /200px  1fr  200px;
+            gap: 10px;
+        }
+        #header{
+            grid-area: head;
+            background-color: skyblue;
+            text-align: center;
+            font-size: 48px;
+            color: white;
+            text-decoration-line: underline;
+            text-decoration-style: wavy;
+        }
+        #hero{
+            grid-area: hero;
+            background-color: skyblue;
+            text-align: center;
+            font-size: 48px;
+            color: white;
+            text-decoration-line: underline;
+            text-decoration-style: wavy;
+        }
+        #waiver{
+            grid-area: waiver;
+            background-color: skyblue;
+            text-align: center;
+            font-size: 48px;
+            color: white;
+            text-decoration-line: underline;
+            text-decoration-style: wavy;
+        }
+        #signup{
+            grid-area: signup;
+            background-color: skyblue;
+            text-align: center;
+            font-size: 48px;
+            color: white;
+            text-decoration-line: underline;
+            text-decoration-style: wavy;
+        }
+        #foot{
+            grid-area: foot;
+            background-color: skyblue;
+            text-align: center;
+            font-size: 48px;
+            color: white;
+            text-decoration-line: underline;
+            text-decoration-style: wavy;
+        }
+
+        </style>
+    </head>
+
+    <body>
+        <div class ="grid">
+            <div id="header">LiechtenFlights</div>
+            <div id="hero">Take a helicopter tour of Liechten!</div>
+            <div id="waiver">Waiver</div>
+            <div id="signup">Sign up</div>
+            <div id="foot">company info and such</div>
+        </div>
+
+    </body>
+</html>
+
