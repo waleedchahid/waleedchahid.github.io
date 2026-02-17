@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Full Body Face</title>
+<script src="../../js/validate.js"></script>
+</head>
+<body>
+
+<canvas id="canvas" width="500" height="500"></canvas>
+
+<script>
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
+
+// =====================
+// HAIR (8 curls)
+// =====================
+ctx.fillStyle = "black";
+for (let i = 150; i <= 350; i += 30) {
+ctx.beginPath();
+ctx.arc(i, 120, 25, 0, Math.PI * 2);
+ctx.fill();
+}
+
+// Side curls
+ctx.beginPath();
+ctx.arc(130, 170, 25, 0, Math.PI * 2);
+ctx.arc(370, 170, 25, 0, Math.PI * 2);
+ctx.fill();
+
+// =====================
+// FACE
+// =====================
+ctx.beginPath();
+ctx.arc(250, 220, 90, 0, Math.PI * 2);
+ctx.fillStyle = "#f5c99b";
+ctx.fill();
+ctx.stroke();
+
+// =====================
+// EYES (2)
+// =====================
+ctx.beginPath();
+ctx.arc(215, 200, 10, 0, Math.PI * 2);
+ctx.arc(285, 200, 10, 0, Math.PI * 2);
+ctx.fillStyle = "black";
+ctx.fill();
+
+// =====================
+// NOSE (triangle)
+// =====================
+ctx.beginPath();
+ctx.moveTo(250, 210);
+ctx.lineTo(235, 240);
+ctx.lineTo(265, 240);
+ctx.closePath();
+ctx.fillStyle = "#e0a96d";
+ctx.fill();
+ctx.stroke();
+
+// =====================
+// SMILE
+// =====================
+ctx.beginPath();
+ctx.arc(250, 255, 35, 0, Math.PI);
+ctx.stroke();
+
+// =====================
+// NECK
+// =====================
+ctx.fillStyle = "#f5c99b";
+ctx.fillRect(220, 300, 60, 50);
+
+// =====================
+// TORSO (shirt)
+// =====================
+ctx.fillStyle = "blue";
+ctx.fillRect(170, 350, 160, 120);
+
+// =====================
+// LEFT ARM
+// =====================
+ctx.fillStyle = "#f5c99b";
+ctx.fillRect(120, 350, 50, 110);
+
+// LEFT HAND
+ctx.beginPath();
+ctx.arc(145, 470, 20, 0, Math.PI * 2);
+ctx.fill();
+
+// LEFT FINGERS (4 small circles)
+for (let i = 125; i <= 165; i += 13) {
+ctx.beginPath();
+ctx.arc(i, 490, 8, 0, Math.PI * 2);
+ctx.fill();
+}
+
+// =====================
+// RIGHT ARM
+// =====================
+ctx.fillRect(330, 350, 50, 110);
+
+// RIGHT HAND
+ctx.beginPath();
+ctx.arc(355, 470, 20, 0, Math.PI * 2);
+ctx.fill();
+
+// RIGHT FINGERS (4 small circles)
+for (let i = 335; i <= 375; i += 13) {
+ctx.beginPath();
+ctx.arc(i, 490, 8, 0, Math.PI * 2);
+ctx.fill();
+}
+
+</script>
+
+</body>
+</html>
+
