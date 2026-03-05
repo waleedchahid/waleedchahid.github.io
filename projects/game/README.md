@@ -21,9 +21,9 @@ graph TD;
     Panda_Express-->Metro_Station;
     Metro_Station-->Train;
     Train-->Capital_One_Arena;
-    Capital One Arena-->Seat;
-    Capital One Arena-->Merch Shop;
-    Capital One Arena-->Snack Shop;
+    Capital_One_Arena-->Seat;
+    Capital_One_Arena-->Merch_Shop;
+    Capital_One_Arena-->Snack_Shop;
 ```
 
 The player starts on the bus, and is then directed to the Food Court. they can
