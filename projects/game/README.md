@@ -10,17 +10,17 @@ the game. The player will start by exiting a bus at pentagon city mall.
 
 ```mermaid
 graph TD;
-    bus(((Bus)))-->Food Court;
-    Food Court-->Shopping;
-    Food Court-->Chipotle;
-    Food Court-->Panda Express;
-    Panda Express-->Boba Tea Shop;
-    Chipotle--> Boba Tea Shop;
-    Boba Tea Shop-->Metro Station;
-    Chipotle-->Metro Station;
-    Panda Express-->Metro Station;
-    Metro Station-->Train;
-    Train-->Capital One Arena;
+    bus(((Bus)))-->Food_Court;
+    Food_Court-->Shopping;
+    Food_Court-->Chipotle;
+    Food_Court-->Panda_Express;
+    Panda_Express-->Boba_Tea_Shop;
+    Chipotle--> Boba_Tea_Shop;
+    Boba_Tea_Shop-->Metro_Station;
+    Chipotle-->Metro_Station;
+    Panda_Express-->Metro_Station;
+    Metro_Station-->Train;
+    Train-->Capital_One_Arena;
     Capital One Arena-->Seat;
     Capital One Arena-->Merch Shop;
     Capital One Arena-->Snack Shop;
