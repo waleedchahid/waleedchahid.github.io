@@ -25,7 +25,7 @@ graph TD;
     Capital_One_Arena-->Merch_Shop;
     Capital_One_Arena-->Snack_Shop;
     Seat-->Merch_Shop;
-    Sea--Snack_Shop;
+    Seat--Snack_Shop;
     Merch_Shop-->Snack_Shop;
 ```
 
