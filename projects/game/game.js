@@ -50,6 +50,24 @@ function Food_Court() {
     waitForInput(processInput);
 }
 
+function Shopping() {
+    clear();
+    print("\nYou are shopping around the mall.");
+    print("\nWhere do you want to go?");
+    print("\n\tFood_Court");
+
+    function processInput(input) {
+        if (input.toLowerCase === "food_court") {
+            Food_Court();
+        } else {
+            stayHere();
+            waitThenCall(Shopping);
+        }
+    }
+
+    waitForInput(processInput);
+}
+
 //finally, make sure you customize this to tell it what should happen at the
 //very start. For this simple example, any input will bring you
 //to locationA
