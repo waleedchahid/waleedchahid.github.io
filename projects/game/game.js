@@ -27,18 +27,24 @@ function Bus() {
     waitForInput(processInput);
 }
 
-function locationB() {
+function Food_Court() {
     clear();
-    print("\nYou are in location B!");
-    print("\nWhere do you want to go next? Say one of these choices:" +
-        "\n\tlocationA");
+    print("\nYou are in the Food Court");
+    print("\nWhere do you want to go next?")?
+    print("\n\tShopping");
+    print("\n\tChipotle");
+    print("\n\tPanda_Express");
     
     function processInput(input){
-        if (input.toLowerCase() === "locationa") {
-            locationA();
+        if (input.toLowerCase() === "shopping") {
+            Shopping();
+        } else if (input.toLowerCase() === "chipotle") {
+            Chipotle();
+        } else if (input.toLowerCase() === "panda_express") {
+            Panda_Express();
         } else {
             stayHere();
-            waitThenCall(locationB);
+            waitThenCall(Food_Court);
         }
     }
     waitForInput(processInput);
