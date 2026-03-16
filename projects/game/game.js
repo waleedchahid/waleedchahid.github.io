@@ -4,7 +4,7 @@ let gameActive = true; //this variable is required.
 //Declare your other global variables here
 let hours = 0;
 let minutes = 0;
-let 
+let currentLocation = "Bus";
 
 //If you need, add any "helper" functions here
 
