@@ -10,18 +10,18 @@ let currentLocation = "Bus";
 
 
 //Make one function for each location
-function locationA() {
+function Bus() {
     clear();
-    print("\nYou are in location A!");
-    print("\nWhere do you want to go next? Say one of these choices:" +
-        "\n\tlocationB");
+    print("\nYou are on the bus heading to Pentagon City Mall.");
+    print("\nWhere do you want to go next?");
+    print("\n\tFood_Court");
     
     function processInput(input){
-        if (input.toLowerCase() === "locationb") {
-            locationB();
+        if (input.toLowerCase() === "food_court") {
+            Food_Court();
         } else {
             stayHere();
-            waitThenCall(locationA);
+            waitThenCall(Bus);
         }
     }
     waitForInput(processInput);
