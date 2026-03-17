@@ -4,7 +4,6 @@ let gameActive = true; //this variable is required.
 //Declare your other global variables here
 let hours = 0;
 let minutes = 0;
-let currentLocation = "Bus";
 
 //If you need, add any "helper" functions here
 
@@ -30,7 +29,7 @@ function Bus() {
 function Food_Court() {
     clear();
     print("\nYou are in the Food Court");
-    print("\nWhere do you want to go next?")?
+    print("\nWhere do you want to go next?");
     print("\n\tShopping");
     print("\n\tChipotle");
     print("\n\tPanda_Express");
