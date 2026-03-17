@@ -201,6 +201,67 @@ function Capital_One_Arena() {
    waitForInput(processInput);
 }
 
+function Seat() {
+   clear();
+   print("\nYou are sitting in your seat watching the game.");
+   print("\nWhere do you want to go?");
+   print("\n\tMerch_Shop");
+   print("\n\tSnack_Shop");
+
+   function processInput(input){
+       input = input.toLowerCase();
+
+       if (input === "merch_shop") {
+           Merch_Shop();
+       }
+       else if (input === "snack_shop") {
+           Snack_Shop();
+       }
+       else {
+           stayHere();
+           waitThenCall(Seat);
+       }
+   }
+
+   waitForInput(processInput);
+}
+
+function Merch_Shop() {
+   clear();
+   print("\nYou are at the Merch Shop.");
+   print("\nWhere do you want to go?");
+   print("\n\tSnack_Shop");
+
+   function processInput(input){
+       if (input.toLowerCase() === "snack_shop") {
+           Snack_Shop();
+       } else {
+           stayHere();
+           waitThenCall(Merch_Shop);
+       }
+   }
+
+   waitForInput(processInput);
+}
+
+function Snack_Shop() {
+   clear();
+   print("\nYou are at the Snack Shop.");
+   print("\nWhere do you want to go?");
+   print("\n\tSeat");
+
+   function processInput(input){
+       if (input.toLowerCase() === "seat") {
+           Seat();
+       } else {
+           stayHere();
+           waitThenCall(Snack_Shop);
+       }
+   }
+
+   waitForInput(processInput);
+}
+
 
 //finally, make sure you customize this to tell it what should happen at the
 //very start. For this simple example, any input will bring you
