@@ -154,6 +154,53 @@ function Metro_Station() {
    waitForInput(processInput);
 }
 
+function Train() {
+   clear();
+   print("\nYou are riding the Train.");
+   print("\nWhere do you want to go?");
+   print("\n\tCapital_One_Arena");
+
+   function processInput(input){
+       if (input.toLowerCase() === "capital_one_arena") {
+           Capital_One_Arena();
+       } else {
+           stayHere();
+           waitThenCall(Train);
+       }
+   }
+
+   waitForInput(processInput);
+}
+
+function Capital_One_Arena() {
+   clear();
+   print("\nYou arrive at Capital One Arena.");
+   print("\nWhere do you want to go?");
+   print("\n\tSeat");
+   print("\n\tMerch_Shop");
+   print("\n\tSnack_Shop");
+
+   function processInput(input){
+       input = input.toLowerCase();
+
+       if (input === "seat") {
+           Seat();
+       }
+       else if (input === "merch_shop") {
+           Merch_Shop();
+       }
+       else if (input === "snack_shop") {
+           Snack_Shop();
+       }
+       else {
+           stayHere();
+           waitThenCall(Capital_One_Arena);
+       }
+   }
+
+   waitForInput(processInput);
+}
+
 
 //finally, make sure you customize this to tell it what should happen at the
 //very start. For this simple example, any input will bring you
