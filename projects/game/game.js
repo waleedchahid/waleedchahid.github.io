@@ -68,6 +68,58 @@ function Shopping() {
     waitForInput(processInput);
 }
 
+function Chipotle() {
+    clear();
+    print("\nThat was some delectible chipotle.");
+    print("\nWhere do you want to go now?");
+    print("\n/t Boba_Tea_Shop");
+    print("\n\tMetro_Station");
+
+    function processInput(input) {
+        input = input.toLowerCase();
+        
+        if (input === "boba_tea_shop") {
+           Boba_Tea_Shop();
+       }
+       else if (input === "metro_station") {
+           Metro_Station();
+       }
+       else {
+           stayHere();
+           waitThenCall(Chipotle);
+       }
+   }
+
+   waitForInput(processInput);
+}
+
+function Panda_Express() {
+   clear();
+   print("\nYou are at Panda Express.");
+   print("\nWhere do you want to go?");
+   print("\n\tBoba_Tea_Shop");
+   print("\n\tMetro_Station");
+
+   function processInput(input){
+       input = input.toLowerCase();
+
+       if (input === "boba_tea_shop") {
+           Boba_Tea_Shop();
+       }
+       else if (input === "metro_station") {
+           Metro_Station();
+       }
+       else {
+           stayHere();
+           waitThenCall(Panda_Express);
+       }
+   }
+
+   waitForInput(processInput);
+}
+
+
+
 //finally, make sure you customize this to tell it what should happen at the
 //very start. For this simple example, any input will bring you
 //to locationA
