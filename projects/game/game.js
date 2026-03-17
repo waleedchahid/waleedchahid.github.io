@@ -118,6 +118,41 @@ function Panda_Express() {
    waitForInput(processInput);
 }
 
+function Boba_Tea_Shop() {
+   clear();
+   print("\nYou are at the Boba Tea Shop.");
+   print("\nWhere do you want to go?");
+   print("\n\tMetro_Station");
+
+   function processInput(input){
+       if (input.toLowerCase() === "metro_station") {
+           Metro_Station();
+       } else {
+           stayHere();
+           waitThenCall(Boba_Tea_Shop);
+       }
+   }
+
+   waitForInput(processInput);
+}
+
+function Metro_Station() {
+   clear();
+   print("\nYou are at the Metro Station.");
+   print("\nWhere do you want to go?");
+   print("\n\tTrain");
+
+   function processInput(input){
+       if (input.toLowerCase() === "train") {
+           Train();
+       } else {
+           stayHere();
+           waitThenCall(Metro_Station);
+       }
+   }
+
+   waitForInput(processInput);
+}
 
 
 //finally, make sure you customize this to tell it what should happen at the
